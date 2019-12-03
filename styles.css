@@ -1,0 +1,59 @@
+#main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #F67E4C;
+
+}
+
+#form{
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  background: #CDCDCD;
+  border: 3px solid #DCDCCD;
+}
+body{
+  background-color: #F3F6F3;
+}
+
+input[type="sumbmit"]{
+  box-sizing: border-box;
+  margin: auto;
+  padding: 10px;
+  background-color: green;
+}
+input{
+  margin: 10px;
+  padding: 10px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+textarea{
+  border:   border: 3px solid gray;
+}
+@media(max-width:960px){
+  #main{
+    grid-template-areas:
+    " advert form"
+     "advert form"
+      "advert form";
+  }
+}
+.advert{
+  width:100%;
+  height: auto;
+  display: block;
+
+}
+#tittle{
+  color:#FFF;
+  font-size: 1.5em;
+}
+#description{
+  font-size: inherit;
+  color: #FFF;
+}
