@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <main id = "main">
+
+
+    <h1 id="tittle">Survey form intended to help Alfred Nyambane Understand himself better</h1>
+    <p id="description">The form is intended to help me understand myself better thus give your honest opinion about Alfred</p>
+    <form id="form" action="index.html" method="post">
+      <label for="name">Name:</label>
+      <input id="name" type="text" name="name" value="" placeholder="Eneter your name"  />
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" value="" placeholder ="Enter your Email" required>
+      <label for="age">Age(optional):</label>
+      <input id="age"type="number" name="number" value="" minmax(0,9 ) placeholder="Age" required>
+      <label for="number">Phone No:</label>
+      <input id="number"type="number" name="" value="" placeholder="Enter phone number" required>
+      <fieldset>
+
+        <legend>Which option best describe you?</legend>
+        <label> Select option best describes you</label>
+        <select class="" name="">
+          <option value="melacholy">Melancholy</option><br />
+          <option value="sanguine">Sanguine</option><br />
+          <option value="pragramatic">Pragmatic</option><br />
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you like me to be your Co-Founder?</legend>
+        <input type="radio" id ="Yes" name="work" value="Yes">
+        <label for="Yes">Yes</label> <br/>
+        <input type="radio"  id = "no" name="work" value="No">
+        <label for="no">No</label> <br/>
+        <input type="radio" id ="indifferent" name="work" value="Indifferent">
+        <label for="work">indifferent</label> <br/>
+      </fieldset>
+      <fieldset>
+        <legend>When looking for founders, what matters to you most?</legend>
+        <input type="checkbox" name="team" value="Vision">Vision <br />
+        <input type="checkbox" name="team" value="Product/Idea"> Product/idea <br />
+        <input type="checkbox" name="team" value="Impact">Impact <br />
+        <label for="team"></label>
+      </fieldset>
+      <fieldset>
+        <legend>What areas do you suggest to me to improve on?</legend>
+        <input type="checkbox" name="improve" value="Communication">Communication <br />
+        <input type="checkbox" name="improve" value="interaction/">interaction <br />
+        <input type="checkbox" name="improve" value="Self-Esteem">Self-Esteem <br />
+        <input type="checkbox" name="improve" value="Stakeholder Angagement">Stakeholder Angagement <br />
+        <input type="checkbox" name="improve" value="Problem solving skilss">Problem solving skilss <br />
+        <input type="checkbox" name="improve" value="Active Listening"> Active Listening <br />
+        <input type="checkbox" name="improve" value="Emotional Intelligence/IQ">Emotional Intelligence/IQ <br />
+
+      </fieldset>
+
+      <legend>Any comment or suggestion?</legend>
+      <label for="comment">Comment</label>
+      <textarea name="name" rows="8" cols="80" placeholder="Type comment here.."></textarea>
+      <input type="submit" name="submit" value = "Submit">
+
+
+    </form>
+    <!-- <section>
+      <div class="advert">
+       <img src="images/MZF.png" alt="">
+
+
+      </div>
+    </section> -->
+  </main>
+  </body>
+</html>
